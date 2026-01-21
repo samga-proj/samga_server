@@ -1,5 +1,6 @@
 import os
 
+import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.staticfiles import StaticFiles
@@ -29,3 +30,6 @@ app.include_router(game.router, prefix="/game", tags=["Game"])
 
 if os.path.exists("web"):
     app.mount("/", StaticFiles(directory="web", html=True), name="static")
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
