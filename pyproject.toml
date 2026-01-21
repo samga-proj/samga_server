@@ -5,4 +5,8 @@ requires-python = ">=3.12,<3.13"
 
 dependencies = [
   "fastapi==0.118.2",
+  "starlette==0.48.0",
+  "pydantic==2.3.0",
+  "motor==4.3.1",
+  "uvicorn==0.23.1"
 ]
