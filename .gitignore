@@ -1,4 +1,6 @@
-.venv
-.idea
+.venv/
+venv/
+__pycache__/
+*.pyc
+_vendor/
 .env
-.__pycache__
