@@ -1,0 +1,11 @@
+[project]
+name = "my-api"
+version = "0.1.0"
+requires-python = "3.12"
+
+dependencies = [
+  "fastapi==0.110.3",
+  "uvicorn==0.29.0",
+  "pydantic==1.10.14",
+  "starlette==0.37.2"
+]
